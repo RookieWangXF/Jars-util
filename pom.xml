@@ -15,6 +15,9 @@
         <module>ConnectionPool</module>
         <module>Utils</module>
         <module>cglib</module>
+        <module>Slf4j-jar</module>
+        <module>Slf4j-log4j</module>
+        <module>Logback-jar</module>
     </modules>
     <build>
         <plugins>
