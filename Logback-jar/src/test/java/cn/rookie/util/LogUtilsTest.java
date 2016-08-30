@@ -1,6 +1,13 @@
 package cn.rookie.util;
 
+import ch.qos.logback.core.util.Loader;
 import org.junit.Before;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
 import static org.junit.Assert.*;
 

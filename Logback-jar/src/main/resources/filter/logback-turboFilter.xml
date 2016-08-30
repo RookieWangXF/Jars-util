@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <turboFilter class="cn.rookie.filter.SampleTurboFilter">
+        <Marker>sample</Marker>
+    </turboFilter>
+
+    <turboFilter class="ch.qos.logback.classic.turbo.MDCFilter">
+        <MDCKey>username</MDCKey>
+        <Value>sebastien</Value>
+        <OnMatch>ACCEPT</OnMatch>
+    </turboFilter>
+
+    <turboFilter class="ch.qos.logback.classic.turbo.MDCFilter">
+        <MDCKey>billing</MDCKey>
+        <OnMatch>DENY</OnMatch>
+    </turboFilter>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="cn.rookie.filter.SampleFilter" />
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} -%msg%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <root>
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

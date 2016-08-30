@@ -34,9 +34,9 @@
             <version>${logback.version}</version>
         </dependency>
         <!--<dependency>   容器访问时候应用
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-access</artifactId>
-            <version>${logback.version}</version>
+            <groupId>ch.qos.logback2</groupId>
+            <artifactId>logback2-access</artifactId>
+            <version>${logback2.version}</version>
         </dependency>-->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -44,6 +44,11 @@
             <version>1.7.21</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>1.7.2</version>
+        </dependency>
 
     </dependencies>
 </project>
